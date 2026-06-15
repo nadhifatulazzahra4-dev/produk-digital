@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: black;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1db954;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1db954;
+}
+
+.hero,
+.hero-features,
+.hero-products {
+    padding: 60px 40px;
+    background: linear-gradient(#1db954, #121212);
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero img,
+.hero-features img {
+    width: 350px;
+    border-radius: 20px;
+}
+
+.hero h1,
+.hero-features h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero p,
+.hero-features p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: #1db954;
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: white;
+    color: black;
+}
+
+.products-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+}
+
+.product-price {
+    color: #1db954;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.features-text,
+.advantages-section,
+.disadvantages-section,
+.benefits-section,
+.spotify-player {
+    padding: 50px;
+    text-align: center;
+}
+
+.features-text p,
+.benefits-section p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.advantages,
+.disadvantages {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.advantages li,
+.disadvantages li {
+    margin: 10px 0;
+}
+
+.advantages li {
+    color: #1db954;
+}
+
+.disadvantages li {
+    color: #ff6b6b;
+}
+
+.quick-features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    background: #1e1e1e;
+    padding: 30px;
+    border-radius: 20px;
+    width: 220px;
+    text-align: center;
+}
+
+.feature-item i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #1db954;
+}
+
+.cta-home {
+    text-align: center;
+    padding: 60px 20px;
+    background: #1db954;
+}
+
+.cta-home h2 {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+.hero-container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero img,
+.hero-features img {
+    width: 100%;
+}
+
+nav {
+    flex-direction: column;
+    gap: 15px;
+}
+
+}
